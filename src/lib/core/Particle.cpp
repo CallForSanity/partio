@@ -37,6 +37,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #endif
 #include "ParticleSimple.h"
 #include "ParticleSimpleInterleave.h"
+#include <algorithm>
 #include <iostream>
 #include <string>
 #include <cstring>

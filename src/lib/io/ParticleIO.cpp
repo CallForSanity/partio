@@ -65,7 +65,9 @@ readers()
         data["mc"]=readMC;
         data["ptc"]=readPTC;
         data["pdc"]=readPDC;
+#ifndef PARTIO_WIN32
         data["prt"]=readPRT;
+#endif
         data["bin"]=readBIN;
         data["pts"]=readPTS;
         data["ptf"]=readPTC;
@@ -95,7 +97,9 @@ writers()
         data["ptc"]=writePTC;
         data["rib"]=writeRIB;
         data["pdc"]=writePDC;
+#ifndef PARTIO_WIN32
         data["prt"]=writePRT;
+#endif
         data["bin"]=writeBIN;
         data["ptf"]=writePTC;
         data["itbl"]=writeBGEO;

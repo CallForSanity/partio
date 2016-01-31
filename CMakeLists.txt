@@ -103,7 +103,7 @@ SET( PARTIO_LIBRARIES partio ${ZLIB_LIBRARY} )
 # make it so partio can be found
 INCLUDE_DIRECTORIES( ${CMAKE_SOURCE_DIR}/src/lib )
 
-SET(SEEXPR_BASE "c:/aselle/seexpr-inst" CACHE STRING "path to SeExpr")
+SET(SEEXPR_BASE "" CACHE STRING "path to SeExpr")
 SET(SEEXPR_INCLUDE_PATH ${SEEXPR_BASE}/include)
 SET(SEEXPR_LIBDIR ${CMAKE_INSTALL_LIBDIR})
 SET(SEEXPR_LINK_PATH ${SEEXPR_BASE}/${SEEXPR_LIBDIR})
@@ -112,9 +112,9 @@ SET(SEEXPR_LIBS "SeExpr")
 
 ## Traverse subdirectories
 ADD_SUBDIRECTORY (src/lib)
-ADD_SUBDIRECTORY (src/tools)
-ADD_SUBDIRECTORY (src/py)
-ADD_SUBDIRECTORY (src/tests)
-ADD_SUBDIRECTORY (src/doc)
+#ADD_SUBDIRECTORY (src/tools)
+#ADD_SUBDIRECTORY (src/py)
+#ADD_SUBDIRECTORY (src/tests)
+#ADD_SUBDIRECTORY (src/doc)
 
 
